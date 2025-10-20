@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kudakwashe Mavis Chakanyuka - Portfolio</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="Kudakwashe Mavis Chakanyuka" />
+          </a>
+        </div>
+
+        <!-- Hamburger icon -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="Kuda.html">Home</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li>
+            <a
+              href="images/Kudakwashe Mavis Chakanyuka-Resume:CV.pdf"
+              target="_blank"
+            >
+              Resume
+            </a>
+          </li>
+          <li><a href="Contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Kudakwashe Mavis Chakanyuka</h1>
+        <h6>
+          Cybersecurity Researcher | Software Engineer | Advocate for
+          Human-Centered Security
+        </h6>
+        <p class="hero-para">
+          I love building software that is secure, reliable, and user-friendly.
+          My research blends formal verification with intuitive interface design
+          to make complex systems trustworthy and accessible. I am passionate
+          about advancing cybersecurity, creating impactful tools, and assisting
+          everyone to navigate technology with confidence.
+        </p>
+      </div>
+    </section>
+
+    <!-- Updates Section -->
+    <section id="updates">
+      <h2>Updates</h2>
+      <div class="updates-list">
+        <p class="update">
+          <strong>Jun, 2025</strong> – Participant, IIT Delhi CS Data Privacy
+          Summer School
+          <span class="subtext">
+            – Selected for a highly competitive international program on
+            advanced topics in data privacy, security, and trustworthy digital
+            technologies.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Kudakwashe Mavis Chakanyuka. All rights reserved.</p>
+    </footer>
+
+    <!-- Hamburger menu JS -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("open"); // animates hamburger
+      });
+    </script>
+  </body>
+</html>
