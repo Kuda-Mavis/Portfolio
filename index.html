@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kudakwashe Mavis Chakanyuka - Portfolio</title>
+    <link rel="stylesheet" href="assets/Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="assets/images/logo.jpg"
+              alt="Kudakwashe Mavis Chakanyuka"
+            />
+          </a>
+        </div>
+
+        <!-- Hamburger icon -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="assets/Projects.html">Projects</a></li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1PFSlSB3LIwJVZv2w-SSrV6VxuAbWlsFj/view?usp=sharing"
+              target="_blank"
+            >
+              Resume
+            </a>
+          </li>
+          <li><a href="assets/Contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Kudakwashe Mavis Chakanyuka</h1>
+        <h6>
+          Cybersecurity Researcher | Building Trustworthy Systems Human-Centered
+          Security Advocate
+        </h6>
+        <p class="hero-para">
+          I love building software that is secure, reliable, and user-friendly.
+          My research blends formal verification with intuitive interface design
+          to make complex systems trustworthy and accessible. I am passionate
+          about advancing cybersecurity, creating impactful tools, and assisting
+          everyone to navigate technology with confidence.
+        </p>
+      </div>
+    </section>
+
+    <!-- Updates Section -->
+    <section id="updates">
+      <h2>Updates</h2>
+      <div class="updates-list">
+        <p class="update">
+          <strong>Oct, 2025</strong> SheCodes Africa Recipient
+          <span class="subtext">
+            Selected for a regional program empowering women in technology
+            through hands-on learning in coding, web development, and digital
+            innovation, driving confidence, and career growth in tech.
+          </span>
+        </p>
+        <p class="update">
+          <strong>Jun, 2025</strong> Participant, IIT Delhi CS Data Privacy
+          Summer School
+          <span class="subtext">
+            Selected for a competitive program exploring advanced research in
+            data privacy, cybersecurity, and trustworthy digital technologies to
+            strengthen global digital security practices.
+          </span>
+        </p>
+        <p class="update">
+          <strong>May, 2024</strong> SheCodes International Recipient
+          <span class="subtext">
+            Chosen for a global initiative supporting women in technology
+            through applied training in coding, design thinking, and digital
+            innovation to drive leadership and inclusion.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Kudakwashe Mavis Chakanyuka. All rights reserved.</p>
+    </footer>
+
+    <!-- Hamburger menu JS -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("open"); // animates hamburger
+      });
+    </script>
+  </body>
+</html>
