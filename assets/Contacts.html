@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kudakwashe Mavis Chakanyuka - Contact</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.jpg" alt="Kudakwashe Mavis Chakanyuka" />
+          </a>
+        </div>
+
+        <!-- Hamburger icon -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="Kuda.html">Home</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1Agw31kDU7Nosd07A3VH7gcxWsAWZzYrA/view?usp=sharing"
+              target="_blank"
+              >Resume</a
+            >
+          </li>
+          <li><a href="Contacts.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Information</h2>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-label">
+            <i class="fas fa-phone"></i> Phone (Personal)
+          </span>
+          <a href="tel:+919053735671">+91 905 373 5671</a>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-label">
+            <i class="fas fa-envelope"></i> Email (Personal)
+          </span>
+          <a href="mailto:kudacee88@gmail.com">kudacee88@gmail.com</a>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-label">
+            <i class="fas fa-envelope-circle-check"></i> Email (Academic)
+          </span>
+          <a href="mailto:kudakwashe.chakanyuka_ug25@ashoka.edu.in">
+            kudakwashe.chakanyuka_ug25@ashoka.edu.in
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-label">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </span>
+          <a href="https://www.linkedin.com/in/kudacee/" target="_blank">
+            linkedin.com/in/kudacee/
+          </a>
+        </div>
+
+        <div class="contact-item">
+          <span class="contact-label">
+            <i class="fab fa-github"></i> GitHub
+          </span>
+          <a href="https://github.com/Kuda-Mavis" target="_blank">
+            github.com/Kuda-Mavis
+          </a>
+        </div>
+        <p class="closing-line">Please feel free to connect anytime!</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Kudakwashe Mavis Chakanyuka. All rights reserved.</p>
+    </footer>
+
+    <!-- Hamburger Menu Script -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
