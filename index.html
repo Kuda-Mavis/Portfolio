@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kudakwashe Mavis Chakanyuka - Portfolio</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/Style.css" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,33 +16,37 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <!-- Header & Navigation -->
+    <!-- ================= HEADER / NAV ================= -->
     <header>
       <nav>
+        <!-- Logo -->
         <div class="logo">
-          <a href="index.html">
+          <a href="index.html" aria-label="Go to Home">
             <img
-              src="assets/images/logo.jpg"
+              src="assets/images/Profile.jpg"
               alt="Kudakwashe Mavis Chakanyuka"
             />
           </a>
         </div>
 
-        <!-- Hamburger icon -->
-        <div class="hamburger" id="hamburger">
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger" aria-label="Menu" role="button">
           <span></span>
           <span></span>
           <span></span>
         </div>
 
+        <!-- Navigation Links -->
         <ul class="nav-links" id="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="assets/Projects.html">Projects</a></li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1Agw31kDU7Nosd07A3VH7gcxWsAWZzYrA/view?usp=sharing"
+              href="https://drive.google.com/file/d/1daOiYPKgSGwt6yBXM_8AFKwIUT1NCo3x/view?usp=sharing"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Resume
             </a>
@@ -48,12 +56,12 @@
       </nav>
     </header>
 
-    <!-- Home Section -->
+    <!-- ================= HERO ================= -->
     <section id="home" class="hero">
       <div class="hero-content">
         <h1>Kudakwashe Mavis Chakanyuka</h1>
         <h6>
-          Computer Science Researcher | Building Trustworthy Systems
+          Computer Science Researcher | Building Trustworthy Systems<br />
           Human-Centered & Intelligent Systems
         </h6>
         <p class="hero-para">
@@ -68,9 +76,10 @@
       </div>
     </section>
 
-    <!-- Updates Section -->
+    <!-- ================= HIGHLIGHTS ================= -->
     <section id="updates">
       <h2>Highlights</h2>
+
       <div class="updates-list">
         <p class="update">
           <strong>Jun, 2025</strong> Participant, IIT Delhi CS Data Privacy
@@ -81,6 +90,7 @@
             strengthen global digital security practices.
           </span>
         </p>
+
         <p class="update">
           <strong>May, 2024</strong> SheCodes International Recipient
           <span class="subtext">
@@ -92,19 +102,19 @@
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ================= FOOTER ================= -->
     <footer>
       <p>&copy; 2025 Kudakwashe Mavis Chakanyuka. All rights reserved.</p>
     </footer>
 
-    <!-- Hamburger menu JS -->
+    <!-- ================= JS ================= -->
     <script>
       const hamburger = document.getElementById("hamburger");
       const navLinks = document.getElementById("nav-links");
 
       hamburger.addEventListener("click", () => {
         navLinks.classList.toggle("active");
-        hamburger.classList.toggle("open"); // animates hamburger
+        hamburger.classList.toggle("open");
       });
     </script>
   </body>

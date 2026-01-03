@@ -474,3 +474,16 @@ footer {
 .toggle-header .arrow {
   color: #000 !important;
 }
+.logo {
+  position: relative;
+  z-index: 10000;
+}
+
+.logo a {
+  display: inline-block;
+}
+
+.logo img {
+  cursor: pointer;
+  pointer-events: auto;
+}
