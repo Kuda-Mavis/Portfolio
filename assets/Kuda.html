@@ -22,6 +22,12 @@
           </a>
         </div>
 
+        <!-- Theme Toggle -->
+        <div class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" role="button">
+          <span class="sun-icon">☀️</span>
+          <span class="moon-icon">🌙</span>
+        </div>
+
         <!-- Hamburger icon -->
         <div class="hamburger" id="hamburger">
           <span></span>
@@ -94,6 +100,9 @@
       <p>&copy; 2025 Kudakwashe Mavis Chakanyuka. All rights reserved.</p>
     </footer>
 
+    <!-- Theme Script -->
+    <script src="theme.js"></script>
+    
     <!-- Hamburger menu JS -->
     <script>
       const hamburger = document.getElementById("hamburger");
@@ -101,7 +110,7 @@
 
       hamburger.addEventListener("click", () => {
         navLinks.classList.toggle("active");
-        hamburger.classList.toggle("open"); // animates hamburger
+        hamburger.classList.toggle("active");
       });
     </script>
   </body>

@@ -29,11 +29,23 @@
           </a>
         </div>
 
-        <!-- Hamburger icon -->
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+        <!-- Mobile Controls -->
+        <div class="mobile-controls">
+          <!-- Hamburger icon -->
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <!-- Mobile Theme Toggle -->
+          <div class="theme-toggle mobile-theme-toggle" id="mobile-theme-toggle" aria-label="Toggle theme" role="button">
+            <span class="theme-icon">
+              <span class="sun-icon">☀️</span>
+              <span class="moon-icon">🌙</span>
+            </span>
+            <span class="theme-label">Light</span>
+          </div>
         </div>
 
         <ul class="nav-links" id="nav-links">
@@ -48,6 +60,15 @@
             </a>
           </li>
           <li><a href="Contacts.html" class="active">Contact</a></li>
+          <li class="theme-toggle-item">
+            <div class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" role="button">
+              <span class="theme-icon">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+              </span>
+              <span class="theme-label">Light</span>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
@@ -107,6 +128,9 @@
       <p>&copy; 2025 Kudakwashe Mavis Chakanyuka. All rights reserved.</p>
     </footer>
 
+    <!-- Theme Script -->
+    <script src="theme.js"></script>
+    
     <!-- Hamburger Menu Script -->
     <script>
       const hamburger = document.getElementById("hamburger");
@@ -114,7 +138,7 @@
 
       hamburger.addEventListener("click", () => {
         navLinks.classList.toggle("active");
-        hamburger.classList.toggle("open");
+        hamburger.classList.toggle("active");
       });
     </script>
   </body>

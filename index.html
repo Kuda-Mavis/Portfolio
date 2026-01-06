@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <!-- ================= HEADER / NAV ================= -->
+    <!-- HEADER / NAV -->
     <header>
       <nav>
         <!-- Logo -->
@@ -31,16 +31,30 @@
           </a>
         </div>
 
-        <!-- Hamburger -->
-        <div class="hamburger" id="hamburger" aria-label="Menu" role="button">
-          <span></span>
-          <span></span>
-          <span></span>
+
+
+        <!-- Mobile Controls -->
+        <div class="mobile-controls">
+          <!-- Hamburger -->
+          <div class="hamburger" id="hamburger" aria-label="Menu" role="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <!-- Mobile Theme Toggle -->
+          <div class="theme-toggle mobile-theme-toggle" id="mobile-theme-toggle" aria-label="Toggle theme" role="button">
+            <span class="theme-icon">
+              <span class="sun-icon">☀️</span>
+              <span class="moon-icon">🌙</span>
+            </span>
+            <span class="theme-label">Light</span>
+          </div>
         </div>
 
         <!-- Navigation Links -->
         <ul class="nav-links" id="nav-links">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="assets/Projects.html">Projects</a></li>
           <li>
             <a
@@ -52,11 +66,20 @@
             </a>
           </li>
           <li><a href="assets/Contacts.html">Contact</a></li>
+          <li class="theme-toggle-item">
+            <div class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" role="button">
+              <span class="theme-icon">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+              </span>
+              <span class="theme-label">Light</span>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <!-- ================= HERO ================= -->
+    <!--  HERO  -->
     <section id="home" class="hero">
       <div class="hero-content">
         <h1>Kudakwashe Mavis Chakanyuka</h1>
@@ -76,7 +99,7 @@
       </div>
     </section>
 
-    <!-- ================= HIGHLIGHTS ================= -->
+    <!--  HIGHLIGHTS  -->
     <section id="updates">
       <h2>Highlights</h2>
 
@@ -102,19 +125,23 @@
       </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
+    <!-- FOOTER  -->
     <footer>
       <p>&copy; 2025 Kudakwashe Mavis Chakanyuka. All rights reserved.</p>
     </footer>
 
-    <!-- ================= JS ================= -->
+    <!-- Theme Script -->
+    <script src="assets/theme.js"></script>
+    
+    <!-- JS  -->
     <script>
       const hamburger = document.getElementById("hamburger");
       const navLinks = document.getElementById("nav-links");
 
+      // Hamburger menu
       hamburger.addEventListener("click", () => {
         navLinks.classList.toggle("active");
-        hamburger.classList.toggle("open");
+        hamburger.classList.toggle("active");
       });
     </script>
   </body>
