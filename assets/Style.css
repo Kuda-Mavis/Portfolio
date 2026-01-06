@@ -480,6 +480,14 @@ footer {
   z-index: 1001;
 }
 
+/* Mobile logo positioning */
+@media (max-width: 1024px) {
+  nav .logo img {
+    margin-left: 10px;
+    width: 80px;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .theme-toggle-item {
