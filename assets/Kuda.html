@@ -17,26 +17,37 @@
     <header>
       <nav>
         <div class="logo">
-          <a href="index.html">
+          <a href="../index.html" aria-label="Go to Home">
             <img src="images/Profile.jpg" alt="Kudakwashe Mavis Chakanyuka" />
           </a>
         </div>
 
-        <!-- Theme Toggle -->
-        <div class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" role="button">
-          <span class="sun-icon">☀️</span>
-          <span class="moon-icon">🌙</span>
-        </div>
+        <!-- Mobile Controls -->
+        <div class="mobile-controls">
+          <!-- Hamburger icon -->
+          <div class="hamburger" id="hamburger" aria-label="Menu" role="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
-        <!-- Hamburger icon -->
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+          <!-- Mobile Theme Toggle -->
+          <div
+            class="theme-toggle mobile-theme-toggle"
+            id="mobile-theme-toggle"
+            aria-label="Toggle theme"
+            role="button"
+          >
+            <span class="theme-icon">
+              <span class="sun-icon">☀️</span>
+              <span class="moon-icon">🌙</span>
+            </span>
+            <span class="theme-label">Light</span>
+          </div>
         </div>
 
         <ul class="nav-links" id="nav-links">
-          <li><a href="Kuda.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="Projects.html">Projects</a></li>
           <li>
             <a
@@ -47,6 +58,20 @@
             </a>
           </li>
           <li><a href="Contacts.html">Contact</a></li>
+          <li class="theme-toggle-item">
+            <div
+              class="theme-toggle"
+              id="theme-toggle"
+              aria-label="Toggle theme"
+              role="button"
+            >
+              <span class="theme-icon">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+              </span>
+              <span class="theme-label">Light</span>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
