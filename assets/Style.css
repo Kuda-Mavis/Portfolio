@@ -460,7 +460,7 @@ footer {
   transition: max-height 0.5s ease;
 }
 .project-category .project-list.active {
-  max-height: 2000px;
+  max-height: 10000px;
 }
 .toggle-header .arrow {
   display: inline-block;
